@@ -13,7 +13,7 @@ def speak(text):
     engine.stop()
 
 def aiprocess(command):
-    client = Groq(api_key="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")
+    client = Groq(api_key="YOUR_GROQ_API_KEY")
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",  # powerful free model
